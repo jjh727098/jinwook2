@@ -1,0 +1,522 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    outline: none;
+}
+body{
+    color: #02253b;
+    list-style: none;
+    background: #dbe9f6;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #dbe9f6), color-stop(44%, #fefcc9), to(#f7d0d5));
+    background: linear-gradient(180deg, #fff 15%, #fff 44%, #9e9cf9 100%);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+#container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#contact{
+    text-align: center;
+    position: relative;
+    height: 620px;
+    padding: 40px 0;
+    background-color: white;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba(32, 28, 28, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 90px;
+}
+#index{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5vw 0;
+}
+.contentWrap section{
+    padding: 3vw 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.content {
+    max-width: 70%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* wave 시작 */
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+#particles{
+    height: 100%;
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #9e9cf9 20%, #173A66 80%);
+    overflow: hidden;
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+/* wave 끝 */
+
+/* header 시작 */
+.container{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+#nav{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: 0.5s;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.75);
+    top: 0;
+}
+.nav_fixed{
+    height: 5rem;
+    padding: 0;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 8px 13px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.nav_logo{
+    float: left;
+    height: 5rem;
+    padding-top: 1.5rem;
+    font-size: 1.25rem;
+}
+.nav_logo a{
+    color: #000;
+    font-weight: bold;
+}
+.nav_menu{
+    float: right;
+    height: 5rem;
+    padding-top: 1.25rem;
+}
+.nav_menu li{
+    float: left;
+}
+.nav_menu li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0 1em;
+    line-height: 2rem;
+    color: #000;
+    font-weight: bold;
+}
+.nav_menu li a.current-menu{
+    color: #9d5cbb;
+}
+.home_title{
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+#index .mainContent{
+    z-index: 99;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.cf::after{
+    content:'';
+    display:block; 
+    clear:both;
+}
+.contentWrap .max68 {
+    width: 68%;
+    margin: 0 auto;
+}
+.mainContent_Wrapper{
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: space-between;
+    height: 700px;
+    color: #fff;
+}
+.main_title{
+    font-size: 6.25rem;
+    letter-spacing: 0.025em;
+    line-height: 1;
+    color: #fff;
+}
+.sub_title{
+    line-height: 2.5em;
+    font-size: 1.5rem;
+    color: #fff;
+}
+#index .mainContent .goContact{
+    border-color: #fff;
+}
+#contents .btn{
+    display: block;
+    width: 230px;
+    padding: 10px;
+    border: 1px solid #1b1b1b;
+    border-radius: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.2s;
+    margin: 0 auto;
+}
+#contents .btn:hover{
+    background: #fff;
+    color: #000;
+}
+.title{
+    margin-bottom: 5vw;
+    background: linear-gradient(to top, #9e9cf96b 50%, transparent 20%);
+    color: #fff;
+    -webkit-text-stroke: 3px #4B6587;
+    font-size: calc(max(35px, 2.5vw));
+    font-weight: 900;
+}
+.title:last-child{
+    text-align: center;
+}
+/* header 끝 */
+
+/* profile 시작 */
+.box_profile_row{
+    width: 49%;
+}
+.box_profile_row:nth-child(1){
+    float: left;
+}
+.box_profile_row:nth-child(2){
+    float: right;
+    margin-top: 80px;
+}
+.profile__skill-icon > li{
+    float: left;
+    margin-right: 48px;
+    margin-top: 28px;
+}
+.greeting{
+    color: var(--text-purple);
+    font-size: 3em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+.profile_top > div{
+    margin-right: 30px;
+    width: 424px;
+    height: 400px;
+    float: left;
+}
+.profile_tt{
+    font-size: 1.777rem !important;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.profile_top ul li {
+    font-size: 15px;
+}
+
+.profile_bottom ul li p em{
+    font-size: 1.333rem;
+    font-weight: 500;
+    width: 70px;
+    display: inline-block;
+}
+.profile_bottom ul li p span{
+    font-size: 1.2rem;
+    margin-left: 100px;
+}
+.profile_bottom > div{
+    float: left;
+}
+.profile_bottom > div:nth-child(2){
+    width: 485px;
+}
+.profile_bottom ul:nth-child(1){
+    margin-right: 70px;
+}
+.profile_bottom ul:nth-child(2) li{
+    margin-right: 30px;
+}
+.profile_bottom ul li{
+    float: left;
+}
+.profile_top ul:nth-child(2){
+    margin-top: 30px;
+}
+.profile_top ul li{
+    line-height: 30px
+}
+.profile_top img{
+    width: 100%;
+    border-radius: 30px;
+}
+.box_profile_row ul li{
+    margin-bottom: 30px;
+}
+/* profile 끝 */
+
+/* work 시작 */
+.work__img_caption{
+    position: absolute;
+    background-color: rgba(2, 37, 59, 0.95);
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    vertical-align: middle;
+}
+.box_work__row img{
+    width: 100%;
+}
+.work__thumbnail:hover .work__img_caption{
+    opacity: 1;
+}
+.material-icons{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+.work__img_caption > .caption{
+    display: inline-block;
+    font-size: 1.1em;
+    height: 1.1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.work__thumbnail{
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    width: 420px;
+    height: 200px;
+    margin: 0 auto;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    overflow: hidden;
+}
+.work__img_caption{
+        position: absolute;
+        background-color: rgba(2, 37, 59, 0.95);
+        width: 100%;
+        height: 100%;
+        color: white;
+        opacity: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        vertical-align: middle;
+}
+.box_component{
+    width: 1180px;
+    margin: 0 auto;
+    background: gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.1)));
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+    backdrop-filter: blur(0px);
+    border: 1px solid white;
+}
+.box_work__row{
+    height: 100%;
+    float: left;
+    padding: 53px 0;
+}
+.box_work__row:first-child{
+    width: 42%;
+}
+.box_work__row:last-child{
+    width: 58%;
+    position: relative;
+}
+.work__info{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.work_introduction ul{
+    margin: 1.2em 0;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.work_introduction > h3{
+    font-size: 2.375em;
+}
+.box_work{
+    height: 350px;
+}
+.box_work:not(:last-child){
+    margin-bottom: 72px;
+}
+.work_btn_view{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: #dbe9f6 3px 10px 20px 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.work_btn_view:hover{
+    background: #000;
+    color: #fff;
+}
+.work__info button:nth-of-type(1){
+    margin-right: 30px;
+}
+/* work 끝 */
+
+/* contact me 시작 */
+.email{
+    display: block;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    font-size: 1.2rem;
+    padding: 1.6rem 0;
+}
+.contact__address{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 320px;
+    text-align: center;
+    opacity: 0;  
+}
+.address__subtitle{
+    display: block;
+    color: #9885d7;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+.sns__container{
+    margin-top: 3rem;
+    text-align: center;
+}
+.sns__column{
+    display: inline-block;
+}
+.sns__column:not(:first-child){
+    margin-left: 2rem;
+}
+/* footer 시작 */
+footer{
+    width: 100%;
+    height: 12rem;
+    text-align: center;
+    color: #fff;
+}
+/* footer 끝 */
