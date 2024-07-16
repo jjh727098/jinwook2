@@ -269,6 +269,15 @@ a{
 .title:last-child{
     text-align: center;
 }
+.header_column_left h1{
+    font-size: 6rem;
+    font-weight: 800;
+    margin-bottom: 6rem;
+    padding: 0 20px;
+}
+.header_column_left h1 span{
+    display: block;
+}
 /* header 끝 */
 
 /* profile 시작 */
@@ -293,8 +302,8 @@ a{
     line-height: 1.2em;
     font-weight: bold;
 }
-.profile_top > div{
-    margin-right: 30px;
+.profile_top > div:nth-child(1){
+    margin-right: 50px;
     width: 424px;
     height: 400px;
     float: left;
@@ -345,6 +354,14 @@ a{
 }
 .box_profile_row ul li{
     margin-bottom: 30px;
+}
+.profile_desp{
+    padding-top: 80px;
+}
+.profile_desp p{
+    font-size: 1.1rem;
+    color: #111;
+    padding-bottom: 25px;
 }
 /* profile 끝 */
 

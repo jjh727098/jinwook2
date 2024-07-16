@@ -55,7 +55,7 @@ $(function(){
         let sct = $(this).scrollTop();
 
         animateTarget.each(function(){
-        let targetOst = $(this).offset().top - 800;
+        let targetOst = $(this).offset().top - 700;
 
 
         if(sct>targetOst){
@@ -72,7 +72,7 @@ $(function(){
     let winSCT = $(window).scrollTop();
     let counters = $('.infomation_conuters');
     let counterNums = counters.find('.counter_list h3');
-    let courtersOST = counters.offset().top - 700;
+    let courtersOST = counters.offset().top - 800;
 
     if(winSCT>courtersOST){
         if(!excuted){
