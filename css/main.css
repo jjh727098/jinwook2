@@ -72,6 +72,11 @@ a{
     align-items: center;
     justify-content: center;
   }
+  @media screen and (max-width: 768px){
+    #contact{
+        height: 400px !important;
+    }
+  }
 /* wave 시작 */
 @keyframes move_wave {
     0% {
@@ -278,6 +283,83 @@ a{
 .header_column_left h1 span{
     display: block;
 }
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    .max68{
+        width: 90% !important;
+    }
+    .open{
+        display: block !important;
+    }
+    .mainContent_Wrapper{
+        height: 100vh;
+    }
+    .header_column_left h1{
+        font-size: 4em;
+    }
+    .open_nav_toggle{
+        display: block;
+    }
+    .nav_toggle{
+        display: block;
+    }
+    .nav_logo{
+        padding-left: 20px;
+    }
+    .nav_menu:active{
+        max-height: 100vh;
+        height: 100%;  
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+    }
+    .nav_menu{
+        display: none;
+        max-height: 100vh;
+        height: 100%;  
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+    }
+    .nav_menu li{
+        float: none;
+        margin-bottom: 10px;
+    }
+    .nav_menu li a{
+        display: inline-block;
+    }
+
+
+    header .nav { margin:0; width: 100%; padding:0 1rem 0; box-sizing:border-box; height: 100vh; max-height: 0; overflow: hidden; transition: all ease-in-out 0.3s; display:block; }
+    header .nav li { display:block; position:relative; padding:1.4rem 2rem; height:auto; }
+    header .nav a { color:#ababab; transition:all 0.6s; text-transform:uppercase; }
+    header .nav .on a { color:#fff;  }
+    header .nav li:hover { cursor:pointer; }
+    header .nav li:hover a { color:#fff; }
+    nav a:before, nav a:after { position:absolute; left:0px; width:100%; height:2px; background:#fff; content:""; opacity:0; transition:all 0.3s; }
+    nav a:before { top:0px; transform:translateY(10px); }
+    nav a:after { bottom:0px; transform:translateY(-10px); }
+    nav a:hover:before, nav a:hover:after { opacity:1; transform:translateY(0px); }
+    nav .on a:after { opacity:1; transform:translateY(0px); }
+    .top .nav.open { background:rgba(0,0,0,0.8);}
+
+    .nav.open { max-height:100vh; height:auto; background:rgba(0,0,0,0.2); }
+    .nav_toggle { display:block; top:1.7rem; right:2rem; background-color:transparent; color:#fff; outline:none; border:0; padding:0; cursor:pointer; width:2rem; height:1.4rem; position:relative; float:right; }
+    .nav_toggle .nav_icon  { width:2rem; height:1.4rem; position:relative; }
+    .nav_toggle .nav_icon span { position:absolute; width:100%; height:0.1rem; background:#000; display:block; transition:all ease-in-out 0.3s; cursor:pointer; }
+    .nav_toggle .nav_icon span:nth-of-type(1) { top:0; }
+    .nav_toggle .nav_icon span:nth-of-type(2) { top:45%; }
+    .nav_toggle .nav_icon span:nth-of-type(3) { bottom:0; }
+    .nav_toggle.open_nav_toggle .nav_icon span:nth-of-type(1) { -webkit-transform: translateY (0.9rem) rotate (-45deg); transform: translateY(0.9rem) rotate(-45deg);}
+    .nav_toggle.open_nav_toggle .nav_icon span:nth-of-type(2) { opacity:0; }
+    .nav_toggle.open_nav_toggle .nav_icon span:nth-of-type(3) { -webkit-transform: translateY(-0.4rem) rotate(45deg); transform: translateY(-0.4rem) rotate(45deg); }
+
+    nav a:hover:before, nav a:hover:after { display:none;  }
+    nav .on a:after { opacity:1; transform:translateY(0px); }
+}
+
 /* header 끝 */
 
 /* profile 시작 */
@@ -363,6 +445,40 @@ a{
     color: #111;
     padding-bottom: 25px;
 }
+
+@media screen and (max-width:768px) {
+    .profile_top img{
+        width: 100%;
+    }
+    .profile_top > div:nth-child(1){
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+    .profile_desp{
+        margin-top: 50px;
+        padding: 0;
+    }
+    .box_component{
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+    .box_work__row{
+        padding: 10px 0 !important;
+        height: auto !important;
+    }
+    .box_work__row:first-child{
+        width: 100% !important; 
+    }
+    .work__thumbnail{
+        margin: 0 !important; 
+    }
+    .work__info{
+        position: static !important;
+        transform: none !important;
+    }
+}
 /* profile 끝 */
 
 /* work 시작 */
@@ -431,7 +547,7 @@ a{
         vertical-align: middle;
 }
 .box_component{
-    width: 1180px;
+    width: 1110px;
     margin: 0 auto;
     background: gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.1)));
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));

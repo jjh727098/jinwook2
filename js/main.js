@@ -253,5 +253,20 @@ popupClose.addEventListener('click', ()=>{
 
 } //popup
 
+var toggle_nav = $('.nav_toggle');
+toggle_nav.on('click', function(e){
+    e.preventDefault();
+    $(this).toggleClass('open_nav_toggle');
+    $('header').toggleClass('open');
+    $('.nav_menu').toggleClass('open');
+});
+$("header .nav a").click(function(){
+    if( $("header").hasClass("open") ){
+        $("header").removeClass("open");
+        $(".nav_toggle").removeClass("open_nav_toggle");
+        $(".nav").removeClass("open");
+    }
+});
+
         
 }); //ready
